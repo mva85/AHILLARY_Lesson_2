@@ -120,11 +120,28 @@ from pandas.core.internals.api import maybe_infer_ndim
 #         continue
 # print(maxx)
 
-#
-
-
 # 4*) задача 3, но нужно найти индекс минимального и максимального элемента в списке
-#
+s=[1,0,2,3,4,5,6,7,9,8]
+minn =0
+maxx =0
+max_i=0
+min_i = 0
+for i in range(len(s)):
+     if i<minn:
+         minn = i
+     else:
+         continue
+print(s.index(minn))
+for i in range(len(s)):
+    if i > maxx:
+        maxx = i
+    else:
+        continue
+print(s.index(maxx))
+
+
+
+
 # Задачи на методы списка:
 # 1) Задачу начать решать с пустого списка:
 # lst = []
