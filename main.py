@@ -121,23 +121,23 @@ from pandas.core.internals.api import maybe_infer_ndim
 # print(maxx)
 
 # 4*) задача 3, но нужно найти индекс минимального и максимального элемента в списке
-s=[1,0,2,3,4,5,6,7,9,8]
-minn =0
-maxx =0
-max_i=0
-min_i = 0
-for i in range(len(s)):
-     if i<minn:
-         minn = i
-     else:
-         continue
-print(s.index(minn))
-for i in range(len(s)):
-    if i > maxx:
-        maxx = i
-    else:
-        continue
-print(s.index(maxx))
+# s=[1,0,2,3,4,5,6,7,9,8]
+# minn =0
+# maxx =0
+# max_i=0
+# min_i = 0
+# for i in range(len(s)):
+#      if i<minn:
+#          minn = i
+#      else:
+#          continue
+# print(s.index(minn))
+# for i in range(len(s)):
+#     if i > maxx:
+#         maxx = i
+#     else:
+#         continue
+# print(s.index(maxx))
 
 
 
@@ -148,6 +148,26 @@ print(s.index(maxx))
 # Папа написал Саше список продуктов (молоко, огурцы, пиво, рыбка) и бабушка тоже попросила купить некоторые продукты (чай, сахар, сухарики).
 # Мама увидела список и сказала вычеркнуть пиво и рыбку
 # Помоги Саше сформировать единый список покупок и посчитать сколько пунктов содержит общий список покупок
+
+
 # 2) Есть список. пользователь вводит число. Нужно определить, есть ли это число в списке
+# k=int(input(' Введите число : '))
+# s=[15,26,36]
+# if k in s:
+#     print('число есть в списке')
+# else:
+#     print('числа нет в списке')
+
+
 # 3) Есть список и число, которое ввел пользователь
 # посчитать сколько раз это число встречается в списке
+k=int(input(' Введите число : '))
+b=[15,26,1,1,1,3,3]
+count=0
+for i in range(len(b)):
+    if k == b[i]:
+        #print('число есть в списке')
+        count+=1
+    else:
+        continue
+print(count)
