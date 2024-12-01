@@ -149,6 +149,20 @@ from pandas.core.internals.api import maybe_infer_ndim
 # Мама увидела список и сказала вычеркнуть пиво и рыбку
 # Помоги Саше сформировать единый список покупок и посчитать сколько пунктов содержит общий список покупок
 
+lst = []
+papa_add=['молоко', 'огурцы', 'пиво', 'рыбка']
+baba_add=['чай', 'сахар', 'сухарики']
+mama_del=['пиво', 'рыбка']
+for i in range(len(papa_add)):
+    lst.append(papa_add[i])
+print(lst)
+for i in range(len(baba_add)):
+    lst.append(baba_add[i])
+print(lst)
+for i in range(len(mama_del)):
+    lst.remove(mama_del[i])
+
+print(lst)
 
 # 2) Есть список. пользователь вводит число. Нужно определить, есть ли это число в списке
 # k=int(input(' Введите число : '))
@@ -161,13 +175,13 @@ from pandas.core.internals.api import maybe_infer_ndim
 
 # 3) Есть список и число, которое ввел пользователь
 # посчитать сколько раз это число встречается в списке
-k=int(input(' Введите число : '))
-b=[15,26,1,1,1,3,3]
-count=0
-for i in range(len(b)):
-    if k == b[i]:
-        #print('число есть в списке')
-        count+=1
-    else:
-        continue
-print(count)
+# k=int(input(' Введите число : '))
+# b=[15,26,1,1,1,3,3]
+# count=0
+# for i in range(len(b)):
+#     if k == b[i]:
+#         #print('число есть в списке')
+#         count+=1
+#     else:
+#         continue
+# print(count)
