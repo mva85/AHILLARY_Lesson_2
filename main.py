@@ -52,7 +52,7 @@ from pandas.core.internals.api import maybe_infer_ndim
 # N=int(input('введите N: '))
 # N_SQR=[1, 4, 9, 16, 25]
 # for i in range(len(N_SQR)):
-#     if N_SQR[i]<N:
+#     if N_SQR[i]**2<N:
 #         print(N_SQR[i])
 
 # Уровень 3:
@@ -61,8 +61,8 @@ from pandas.core.internals.api import maybe_infer_ndim
 # n1=3
 # n2=5
 # #k=x1*n1+x2*n2
-# if K<n1 or (K%n1==0 or K%n2==0 or K%(n1+n2)==0 or (K-n2)%(n1)==0 or (K-n1)%(n2)==0):
-#     print('Можно  купить ровно k шариков мороженного')
+# if (K!=1 and K!=2) and (K%n1==0 or K%n2==0 or K%(n1+n2)==0 or (K-n2)%(n1)==0 or (K-n1)%(n2)==0):
+#     print(f'Можно  купить ровно {K} шариков мороженного')
 # else:
 #     print('Нельзя  купить ровно k шариков мороженного')
 
@@ -149,22 +149,22 @@ from pandas.core.internals.api import maybe_infer_ndim
 # Мама увидела список и сказала вычеркнуть пиво и рыбку
 # Помоги Саше сформировать единый список покупок и посчитать сколько пунктов содержит общий список покупок
 
-lst = []
-papa_add=['молоко', 'огурцы', 'пиво', 'рыбка']
-baba_add=['чай', 'сахар', 'сухарики']
-mama_del=['пиво', 'рыбка', 'ker']
-for i in range(len(papa_add)):
-    lst.append(papa_add[i])
-print(lst)
-for i in range(len(baba_add)):
-    lst.append(baba_add[i])
-print(lst)
-for i in range(len(mama_del)):
-    if mama_del[i] in lst:
-        lst.remove(mama_del[i])
-    else:
-        print(f'элемента {mama_del[i]} из списка', mama_del , 'нет в списке',  lst )
-print(lst)
+# lst = []
+# papa_add=['молоко', 'огурцы', 'пиво', 'рыбка']
+# baba_add=['чай', 'сахар', 'сухарики']
+# mama_del=['пиво', 'рыбка', 'ker']
+# for i in range(len(papa_add)):
+#     lst.append(papa_add[i])
+# print(lst)
+# for i in range(len(baba_add)):
+#     lst.append(baba_add[i])
+# print(lst)
+# for i in range(len(mama_del)):
+#     if mama_del[i] in lst:
+#         lst.remove(mama_del[i])
+#     else:
+#         print(f'элемента {mama_del[i]} из списка', mama_del , 'нет в списке',  lst )
+# print(lst)
 
 # 2) Есть список. пользователь вводит число. Нужно определить, есть ли это число в списке
 # k=int(input(' Введите число : '))
