@@ -152,7 +152,7 @@ from pandas.core.internals.api import maybe_infer_ndim
 lst = []
 papa_add=['молоко', 'огурцы', 'пиво', 'рыбка']
 baba_add=['чай', 'сахар', 'сухарики']
-mama_del=['пиво', 'рыбка']
+mama_del=['пиво', 'рыбка', 'ker']
 for i in range(len(papa_add)):
     lst.append(papa_add[i])
 print(lst)
@@ -160,8 +160,10 @@ for i in range(len(baba_add)):
     lst.append(baba_add[i])
 print(lst)
 for i in range(len(mama_del)):
-    lst.remove(mama_del[i])
-
+    if mama_del[i] in lst:
+        lst.remove(mama_del[i])
+    else:
+        print(f'элемента {mama_del[i]} из списка', mama_del , 'нет в списке',  lst )
 print(lst)
 
 # 2) Есть список. пользователь вводит число. Нужно определить, есть ли это число в списке
